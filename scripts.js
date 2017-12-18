@@ -1,3 +1,5 @@
+'use strict';
+
 // an array of students
 const students = document.getElementsByClassName('student-item');
 const page = document.querySelector('.page');
@@ -113,7 +115,7 @@ function createSearchComponent() {
   console.log(">>>>> createSearchComponent RUNNING <<<<<");
   const pageHeader = document.querySelector('.page-header');
   const searchDiv = document.createElement('div');
-  searchComponent = `
+  const searchComponent = `
       <input placeholder="Search for students...">
       <button>Search</button>
   `;
